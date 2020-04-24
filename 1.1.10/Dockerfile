@@ -1,0 +1,4 @@
+ARG VERSION="1.1.10-r2"
+ARG BASE_IMAGE="onbuild"
+
+FROM ${BASE_IMAGE}
