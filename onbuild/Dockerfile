@@ -30,7 +30,5 @@ ONBUILD LABEL org.label-schema.version="${VERSION}" \
 
 WORKDIR /src
 
-EXPOSE 1313
-
-#ENTRYPOINT ["/usr/local/sbin/borgbackup"]
-#CMD ["serve", "--bind=0.0.0.0"]
+ENTRYPOINT ["/usr/bin/borg"]
+CMD ["--help"]
